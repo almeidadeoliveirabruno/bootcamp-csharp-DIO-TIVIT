@@ -8,7 +8,22 @@ Os projetos são simples, porém intencionais: cada um trabalha conceitos essenc
 
 ---
 
-## 📌 Projeto 01 — Sistema de Estacionamento (Console)
+## 🗂️ Índice de Projetos
+
+* [Projeto 01 — Sistema de Estacionamento (Console)](#-projeto-01--sistema-de-estacionamento-console)
+* [Projeto 02 — Sistema de Hospedagem (Console)](#-projeto-02--sistema-de-hospedagem-console)
+
+---
+
+# 🧱 ─────────────────────────────────────────────
+
+# 📌 Projeto 01 — Sistema de Estacionamento (Console)
+
+# 🧱 ─────────────────────────────────────────────
+
+> 🔹 Projeto independente
+> 🔹 Aplicação Console
+> 🔹 Foco em lógica, coleções e validações
 
 ### 🎯 Objetivo
 
@@ -92,7 +107,123 @@ DesafioFundamentos
 
 ---
 
-## 📌 Observações finais
+### ✅ Encerramento do Projeto 01
 
-Este projeto faz parte do processo de aprendizado e consolidação dos fundamentos da linguagem C#. Melhorias e refatorações poderão ser aplicadas ao longo do tempo conforme a evolução dos estudos.
+Este projeto consolida os fundamentos de entrada de dados, estruturas de repetição e manipulação de listas em C#.
 
+---
+
+# 🧱 ─────────────────────────────────────────────
+
+# 📌 Projeto 02 — Sistema de Hospedagem (Console)
+
+# 🧱 ─────────────────────────────────────────────
+
+> 🔹 Projeto independente
+> 🔹 Aplicação Console
+> 🔹 Foco em orientação a objetos e regras de negócio
+
+### 🎯 Objetivo
+
+Criar um sistema de **hospedagem em aplicação console**, simulando o processo de reserva de um hotel, permitindo:
+
+* Cadastro de hóspedes
+* Cadastro de suítes
+* Criação de reservas
+* Validação da capacidade da suíte
+* Cálculo do valor total da diária com regras de desconto
+
+O projeto reforça conceitos de **orientação a objetos**, relacionamento entre classes e regras de negócio simples, muito comuns em sistemas reais.
+
+---
+
+### 🧠 Conceitos aplicados
+
+* Classes, propriedades e construtores
+* Encapsulamento e responsabilidade de classes
+* Relacionamento entre objetos (Pessoa ↔ Reserva ↔ Suíte)
+* Listas (`List<T>`)
+* Expressões de propriedade (`=>`)
+* Regras de negócio com validações
+* Lançamento de exceções (`InvalidOperationException`)
+* Cálculo de valores com `decimal`
+
+---
+
+### 🧩 Funcionalidades
+
+#### 👤 Cadastro de hóspedes
+
+* Criação de hóspedes através da classe `Pessoa`
+* Suporte a nome e sobrenome
+* Exibição do nome completo em letras maiúsculas
+
+#### 🏨 Cadastro de suíte
+
+* Definição do tipo da suíte
+* Capacidade máxima de hóspedes
+* Valor da diária
+
+#### 📅 Criação de reserva
+
+* Associação de hóspedes a uma reserva
+* Associação de uma suíte à reserva
+* Definição da quantidade de dias reservados
+
+#### ✅ Validação de capacidade
+
+* Impede reservas onde o número de hóspedes ultrapassa a capacidade da suíte
+* Lança uma exceção em caso de regra violada
+
+#### 💰 Cálculo do valor da diária
+
+O valor total da reserva é calculado da seguinte forma:
+
+```
+valor total = dias reservados × valor da diária
+```
+
+**Regra de desconto:**
+
+* Reservas com **10 dias ou mais** recebem **10% de desconto** sobre o valor total
+
+---
+
+### 🛠️ Tecnologias utilizadas
+
+* C#
+* .NET (Console Application)
+
+---
+
+### 📁 Estrutura do projeto
+
+```
+DesafioProjetoHospedagem
+│
+├── Program.cs
+└── Models
+    ├── Pessoa.cs
+    ├── Suite.cs
+    └── Reserva.cs
+```
+
+* **Program.cs**: responsável pela execução do fluxo principal e exibição das informações no console
+* **Pessoa.cs**: representa os hóspedes
+* **Suite.cs**: representa a suíte do hotel
+* **Reserva.cs**: contém as regras de negócio da reserva
+
+---
+
+### ▶️ Como executar
+
+1. Clone o repositório
+2. Abra o projeto em uma IDE compatível (Visual Studio ou VS Code)
+3. Execute o projeto como aplicação console
+4. Observe no terminal a quantidade de hóspedes e o valor calculado da diária
+
+---
+
+### ✅ Encerramento do Projeto 02
+
+Este projeto consolida os fundamentos de orientação a objetos, validações e aplicação de regras de negócio em C#.
