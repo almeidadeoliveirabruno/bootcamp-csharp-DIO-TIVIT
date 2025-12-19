@@ -12,6 +12,7 @@ Os projetos são simples, porém intencionais: cada um trabalha conceitos essenc
 
 * [Projeto 01 — Sistema de Estacionamento (Console)](#-projeto-01--sistema-de-estacionamento-console)
 * [Projeto 02 — Sistema de Hospedagem (Console)](#-projeto-02--sistema-de-hospedagem-console)
+* [Projeto 03 — Sistema de Smartphones (POO / Console)](#-projeto-03--sistema-de-smartphones-poo--console)
 
 ---
 
@@ -110,6 +111,8 @@ DesafioFundamentos
 ### ✅ Encerramento do Projeto 01
 
 Este projeto consolida os fundamentos de entrada de dados, estruturas de repetição e manipulação de listas em C#.
+
+🔝 [Voltar ao índice](#️-índice-de-projetos)
 
 ---
 
@@ -227,3 +230,114 @@ DesafioProjetoHospedagem
 ### ✅ Encerramento do Projeto 02
 
 Este projeto consolida os fundamentos de orientação a objetos, validações e aplicação de regras de negócio em C#.
+
+🔝 [Voltar ao índice](#️-índice-de-projetos)
+
+---
+
+# 🧱 ─────────────────────────────────────────────
+
+# 📌 Projeto 03 — Sistema de Smartphones (POO / Console)
+
+# 🧱 ─────────────────────────────────────────────
+
+> 🔹 Projeto independente
+> 🔹 Aplicação Console
+> 🔹 Foco em herança, abstração e polimorfismo
+
+### 🎯 Objetivo
+
+Criar um sistema simples em **aplicação console** para simular o funcionamento de smartphones, utilizando **Programação Orientada a Objetos**, com foco em:
+
+* Herança entre classes
+* Classes abstratas
+* Sobrescrita de métodos
+* Polimorfismo em tempo de execução
+
+O projeto utiliza uma classe base abstrata (`Smartphone`) e classes concretas (`Nokia` e `Iphone`) para demonstrar comportamentos específicos de cada modelo.
+
+---
+
+### 🧠 Conceitos aplicados
+
+* Programação Orientada a Objetos (POO)
+* Classe abstrata (`abstract`)
+* Herança (`:`)
+* Métodos abstratos
+* Sobrescrita de métodos (`override`)
+* Polimorfismo
+* Encapsulamento (`private set`)
+
+---
+
+### 🧩 Funcionalidades
+
+#### 📱 Classe base Smartphone
+
+* Armazena informações comuns a todos os smartphones:
+
+  * Número
+  * Modelo
+  * IMEI
+  * Memória
+* Possui métodos comuns:
+
+  * `Ligar()`
+  * `ReceberLigacao()`
+* Define o método abstrato:
+
+  * `InstalarAplicativo(string nomeApp)`
+
+#### 📲 Classes derivadas (Nokia e Iphone)
+
+* Herdam da classe `Smartphone`
+* Implementam o método `InstalarAplicativo` de forma específica para cada marca
+
+Exemplo de comportamento:
+
+```
+Instalando o aplicativo WhatsApp no Nokia...
+Instalando o aplicativo WhatsApp no Iphone...
+```
+
+---
+
+### 🛠️ Tecnologias utilizadas
+
+* C#
+* .NET (Console Application)
+
+---
+
+### 📁 Estrutura do projeto
+
+```
+DesafioPOO
+│
+├── Program.cs
+└── Models
+    ├── Smartphone.cs
+    ├── Nokia.cs
+    └── Iphone.cs
+```
+
+* **Program.cs**: responsável por instanciar os objetos e testar os comportamentos
+* **Smartphone.cs**: classe abstrata base com atributos e métodos comuns
+* **Nokia.cs** e **Iphone.cs**: implementações concretas do smartphone
+
+---
+
+### ▶️ Como executar
+
+1. Clone o repositório
+2. Abra o projeto em uma IDE compatível (Visual Studio ou VS Code)
+3. Execute o projeto como aplicação console
+4. Observe no terminal os testes de ligação e instalação de aplicativos
+
+---
+
+### ✅ Encerramento do Projeto 03
+
+Este projeto consolida os fundamentos de **herança, abstração e polimorfismo** em C#, servindo como base para arquiteturas mais complexas e extensíveis no futuro.
+
+🔝 [Voltar ao índice](#️-índice-de-projetos)
