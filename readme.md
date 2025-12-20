@@ -10,32 +10,21 @@ Os projetos são simples, porém intencionais: cada um trabalha conceitos essenc
 
 ## 🗂️ Índice de Projetos
 
-* [Projeto 01 — Sistema de Estacionamento (Console)](#-projeto-01--sistema-de-estacionamento-console)
-* [Projeto 02 — Sistema de Hospedagem (Console)](#-projeto-02--sistema-de-hospedagem-console)
-* [Projeto 03 — Sistema de Smartphones (POO / Console)](#-projeto-03--sistema-de-smartphones-poo--console)
+* [Projeto 01 — Sistema de Estacionamento (Console)](#projeto-01--sistema-de-estacionamento-console)
+* [Projeto 02 — Sistema de Hospedagem (Console)](#projeto-02--sistema-de-hospedagem-console)
+* [Projeto 03 — Sistema de Smartphones (POO / Console)](#projeto-03--sistema-de-smartphones-poo--console)
+* [Projeto 04 — Consultas SQL com Banco de Dados de Filmes](#projeto-04--consultas-sql-com-banco-de-dados-de-filmes)
 
 ---
 
-# 🧱 ─────────────────────────────────────────────
+## Projeto 01 — Sistema de Estacionamento (Console)
 
-# 📌 Projeto 01 — Sistema de Estacionamento (Console)
-
-# 🧱 ─────────────────────────────────────────────
-
-> 🔹 Projeto independente
-> 🔹 Aplicação Console
-> 🔹 Foco em lógica, coleções e validações
+**Tipo:** Aplicação Console
+**Foco:** Lógica, coleções e validações
 
 ### 🎯 Objetivo
 
-Criar um sistema de estacionamento em **aplicação console**, permitindo:
-
-* Cadastro de veículos
-* Remoção de veículos
-* Cálculo do valor a pagar com base no tempo estacionado
-* Listagem dos veículos estacionados
-
-O projeto trabalha validações de entrada, estruturas de repetição, coleções e organização em classes.
+Criar um sistema de estacionamento em **aplicação console**, permitindo cadastro, remoção e listagem de veículos, além do cálculo do valor a pagar com base no tempo estacionado.
 
 ---
 
@@ -53,34 +42,9 @@ O projeto trabalha validações de entrada, estruturas de repetição, coleçõe
 
 ### 🧩 Funcionalidades
 
-#### ➕ Cadastrar veículo
-
-* Solicita a placa do veículo
-* Valida o formato da placa (`AAA-0000`)
-* Armazena a placa na lista de veículos
-
-#### ➖ Remover veículo
-
-* Solicita a placa
-* Verifica se o veículo está estacionado
-* Solicita a quantidade de horas
-* Calcula o valor total:
-
-```
-preço total = preço inicial + (preço por hora × horas)
-```
-
-#### 📋 Listar veículos
-
-* Exibe todos os veículos atualmente estacionados
-
----
-
-### 🛠️ Tecnologias utilizadas
-
-* C#
-* .NET (Console Application)
-* Namespace `System.Text.RegularExpressions`
+* **Cadastrar veículo:** valida o formato da placa e armazena na lista
+* **Remover veículo:** calcula o valor com base no tempo estacionado
+* **Listar veículos:** exibe todos os veículos cadastrados
 
 ---
 
@@ -88,114 +52,54 @@ preço total = preço inicial + (preço por hora × horas)
 
 ```
 DesafioFundamentos
-│
 ├── Program.cs
 └── Models
     └── Estacionamento.cs
 ```
 
-* **Program.cs**: responsável pelo menu e interação com o usuário
-* **Estacionamento.cs**: contém as regras de negócio do estacionamento
-
 ---
 
-### ▶️ Como executar
+### ▶️ Execução
 
 1. Clone o repositório
-2. Abra o projeto em uma IDE compatível (Visual Studio ou VS Code)
-3. Execute o projeto como aplicação console
-4. Siga as instruções exibidas no terminal
+2. Abra o projeto em uma IDE compatível
+3. Execute como aplicação console
 
 ---
-
-### ✅ Encerramento do Projeto 01
-
-Este projeto consolida os fundamentos de entrada de dados, estruturas de repetição e manipulação de listas em C#.
 
 🔝 [Voltar ao índice](#️-índice-de-projetos)
 
 ---
 
-# 🧱 ─────────────────────────────────────────────
+## Projeto 02 — Sistema de Hospedagem (Console)
 
-# 📌 Projeto 02 — Sistema de Hospedagem (Console)
-
-# 🧱 ─────────────────────────────────────────────
-
-> 🔹 Projeto independente
-> 🔹 Aplicação Console
-> 🔹 Foco em orientação a objetos e regras de negócio
+**Tipo:** Aplicação Console
+**Foco:** Orientação a objetos e regras de negócio
 
 ### 🎯 Objetivo
 
-Criar um sistema de **hospedagem em aplicação console**, simulando o processo de reserva de um hotel, permitindo:
-
-* Cadastro de hóspedes
-* Cadastro de suítes
-* Criação de reservas
-* Validação da capacidade da suíte
-* Cálculo do valor total da diária com regras de desconto
-
-O projeto reforça conceitos de **orientação a objetos**, relacionamento entre classes e regras de negócio simples, muito comuns em sistemas reais.
+Simular o processo de reserva de um hotel, permitindo cadastro de hóspedes, suítes e reservas, com validações de capacidade e cálculo de valores.
 
 ---
 
 ### 🧠 Conceitos aplicados
 
 * Classes, propriedades e construtores
-* Encapsulamento e responsabilidade de classes
-* Relacionamento entre objetos (Pessoa ↔ Reserva ↔ Suíte)
+* Relacionamento entre objetos
 * Listas (`List<T>`)
-* Expressões de propriedade (`=>`)
 * Regras de negócio com validações
-* Lançamento de exceções (`InvalidOperationException`)
+* Lançamento de exceções
 * Cálculo de valores com `decimal`
 
 ---
 
 ### 🧩 Funcionalidades
 
-#### 👤 Cadastro de hóspedes
-
-* Criação de hóspedes através da classe `Pessoa`
-* Suporte a nome e sobrenome
-* Exibição do nome completo em letras maiúsculas
-
-#### 🏨 Cadastro de suíte
-
-* Definição do tipo da suíte
-* Capacidade máxima de hóspedes
-* Valor da diária
-
-#### 📅 Criação de reserva
-
-* Associação de hóspedes a uma reserva
-* Associação de uma suíte à reserva
-* Definição da quantidade de dias reservados
-
-#### ✅ Validação de capacidade
-
-* Impede reservas onde o número de hóspedes ultrapassa a capacidade da suíte
-* Lança uma exceção em caso de regra violada
-
-#### 💰 Cálculo do valor da diária
-
-O valor total da reserva é calculado da seguinte forma:
-
-```
-valor total = dias reservados × valor da diária
-```
-
-**Regra de desconto:**
-
-* Reservas com **10 dias ou mais** recebem **10% de desconto** sobre o valor total
-
----
-
-### 🛠️ Tecnologias utilizadas
-
-* C#
-* .NET (Console Application)
+* Cadastro de hóspedes
+* Cadastro de suítes
+* Criação de reservas
+* Validação da capacidade da suíte
+* Cálculo de diária com desconto
 
 ---
 
@@ -203,7 +107,6 @@ valor total = dias reservados × valor da diária
 
 ```
 DesafioProjetoHospedagem
-│
 ├── Program.cs
 └── Models
     ├── Pessoa.cs
@@ -211,101 +114,47 @@ DesafioProjetoHospedagem
     └── Reserva.cs
 ```
 
-* **Program.cs**: responsável pela execução do fluxo principal e exibição das informações no console
-* **Pessoa.cs**: representa os hóspedes
-* **Suite.cs**: representa a suíte do hotel
-* **Reserva.cs**: contém as regras de negócio da reserva
-
 ---
 
-### ▶️ Como executar
+### ▶️ Execução
 
 1. Clone o repositório
-2. Abra o projeto em uma IDE compatível (Visual Studio ou VS Code)
-3. Execute o projeto como aplicação console
-4. Observe no terminal a quantidade de hóspedes e o valor calculado da diária
+2. Abra o projeto em uma IDE compatível
+3. Execute como aplicação console
 
 ---
-
-### ✅ Encerramento do Projeto 02
-
-Este projeto consolida os fundamentos de orientação a objetos, validações e aplicação de regras de negócio em C#.
 
 🔝 [Voltar ao índice](#️-índice-de-projetos)
 
 ---
 
-# 🧱 ─────────────────────────────────────────────
+## Projeto 03 — Sistema de Smartphones (POO / Console)
 
-# 📌 Projeto 03 — Sistema de Smartphones (POO / Console)
-
-# 🧱 ─────────────────────────────────────────────
-
-> 🔹 Projeto independente
-> 🔹 Aplicação Console
-> 🔹 Foco em herança, abstração e polimorfismo
+**Tipo:** Aplicação Console
+**Foco:** Herança, abstração e polimorfismo
 
 ### 🎯 Objetivo
 
-Criar um sistema simples em **aplicação console** para simular o funcionamento de smartphones, utilizando **Programação Orientada a Objetos**, com foco em:
-
-* Herança entre classes
-* Classes abstratas
-* Sobrescrita de métodos
-* Polimorfismo em tempo de execução
-
-O projeto utiliza uma classe base abstrata (`Smartphone`) e classes concretas (`Nokia` e `Iphone`) para demonstrar comportamentos específicos de cada modelo.
+Demonstrar conceitos de **Programação Orientada a Objetos** por meio de um sistema simples que simula o comportamento de smartphones.
 
 ---
 
 ### 🧠 Conceitos aplicados
 
-* Programação Orientada a Objetos (POO)
-* Classe abstrata (`abstract`)
-* Herança (`:`)
+* Classe abstrata
+* Herança
 * Métodos abstratos
-* Sobrescrita de métodos (`override`)
+* Sobrescrita de métodos
 * Polimorfismo
-* Encapsulamento (`private set`)
+* Encapsulamento
 
 ---
 
 ### 🧩 Funcionalidades
 
-#### 📱 Classe base Smartphone
-
-* Armazena informações comuns a todos os smartphones:
-
-  * Número
-  * Modelo
-  * IMEI
-  * Memória
-* Possui métodos comuns:
-
-  * `Ligar()`
-  * `ReceberLigacao()`
-* Define o método abstrato:
-
-  * `InstalarAplicativo(string nomeApp)`
-
-#### 📲 Classes derivadas (Nokia e Iphone)
-
-* Herdam da classe `Smartphone`
-* Implementam o método `InstalarAplicativo` de forma específica para cada marca
-
-Exemplo de comportamento:
-
-```
-Instalando o aplicativo WhatsApp no Nokia...
-Instalando o aplicativo WhatsApp no Iphone...
-```
-
----
-
-### 🛠️ Tecnologias utilizadas
-
-* C#
-* .NET (Console Application)
+* Classe base `Smartphone` com métodos comuns
+* Classes `Nokia` e `Iphone` com comportamentos específicos
+* Simulação de ligações e instalação de aplicativos
 
 ---
 
@@ -313,7 +162,6 @@ Instalando o aplicativo WhatsApp no Iphone...
 
 ```
 DesafioPOO
-│
 ├── Program.cs
 └── Models
     ├── Smartphone.cs
@@ -321,23 +169,67 @@ DesafioPOO
     └── Iphone.cs
 ```
 
-* **Program.cs**: responsável por instanciar os objetos e testar os comportamentos
-* **Smartphone.cs**: classe abstrata base com atributos e métodos comuns
-* **Nokia.cs** e **Iphone.cs**: implementações concretas do smartphone
-
 ---
 
-### ▶️ Como executar
+### ▶️ Execução
 
 1. Clone o repositório
-2. Abra o projeto em uma IDE compatível (Visual Studio ou VS Code)
-3. Execute o projeto como aplicação console
-4. Observe no terminal os testes de ligação e instalação de aplicativos
+2. Abra o projeto em uma IDE compatível
+3. Execute como aplicação console
 
 ---
 
-### ✅ Encerramento do Projeto 03
+🔝 [Voltar ao índice](#️-índice-de-projetos)
 
-Este projeto consolida os fundamentos de **herança, abstração e polimorfismo** em C#, servindo como base para arquiteturas mais complexas e extensíveis no futuro.
+---
+
+## Projeto 04 — Consultas SQL com Banco de Dados de Filmes
+
+**Tipo:** Banco de Dados Relacional
+**Foco:** Consultas SQL e relacionamentos entre tabelas
+
+### 🎯 Objetivo
+
+Aplicar consultas SQL sobre um banco de dados relacional de filmes, explorando filtros, ordenações, agregações e **JOINs**.
+
+---
+
+### 🧠 Conceitos aplicados
+
+* `SELECT`, `WHERE`, `ORDER BY`
+* `GROUP BY` e funções de agregação
+* Relacionamentos entre tabelas
+* `INNER JOIN`
+
+---
+
+### 🗄️ Estrutura do banco
+
+* Filmes
+* Atores
+* Gêneros
+* FilmesGenero
+* ElencoFilme
+
+---
+
+### 🧩 Consultas realizadas
+
+* Filmes por ano e duração
+* Filmes lançados após determinado ano
+* Contagem de filmes por ano
+* Atores por gênero
+* Filmes com seus gêneros
+* Filmes com atores e papéis
+
+---
+
+### ▶️ Execução
+
+1. Execute o script de criação do banco de dados
+2. Crie as tabelas
+3. Execute as consultas SQL
+
+---
 
 🔝 [Voltar ao índice](#️-índice-de-projetos)
