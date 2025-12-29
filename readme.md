@@ -14,7 +14,7 @@ Os projetos são simples, porém intencionais: cada um trabalha conceitos essenc
 * [Projeto 02 — Sistema de Hospedagem (Console)](#projeto-02--sistema-de-hospedagem-console)
 * [Projeto 03 — Sistema de Smartphones (POO / Console)](#projeto-03--sistema-de-smartphones-poo--console)
 * [Projeto 04 — Consultas SQL com Banco de Dados de Filmes](#projeto-04--consultas-sql-com-banco-de-dados-de-filmes)
-
+* [Projeto 05 — API de Tarefas (Web API)](#projeto-05--api-de-tarefas-web-api)
 ---
 
 ## Projeto 01 — Sistema de Estacionamento (Console)
@@ -70,6 +70,7 @@ DesafioFundamentos
 🔝 [Voltar ao índice](#️-índice-de-projetos)
 
 ---
+<br> <br>
 
 ## Projeto 02 — Sistema de Hospedagem (Console)
 
@@ -127,6 +128,7 @@ DesafioProjetoHospedagem
 🔝 [Voltar ao índice](#️-índice-de-projetos)
 
 ---
+<br> <br>
 
 ## Projeto 03 — Sistema de Smartphones (POO / Console)
 
@@ -182,6 +184,7 @@ DesafioPOO
 🔝 [Voltar ao índice](#️-índice-de-projetos)
 
 ---
+<br> <br>
 
 ## Projeto 04 — Consultas SQL com Banco de Dados de Filmes
 
@@ -233,3 +236,90 @@ Aplicar consultas SQL sobre um banco de dados relacional de filmes, explorando f
 ---
 
 🔝 [Voltar ao índice](#️-índice-de-projetos)
+
+---
+<br> <br>
+
+## Projeto 05 — API de Tarefas (Web API)
+
+**Tipo:** Web API (ASP.NET Core)
+**Foco:** APIs REST, Entity Framework Core e persistência de dados
+
+### 🎯 Objetivo
+
+Criar uma API para gerenciar tarefas (ToDo), permitindo operações de CRUD e consultas por título, data e status, com documentação via Swagger.
+
+---
+
+### ⚙️ Contexto
+
+Uma aplicação simples de gerenciador de tarefas serve como base para aprender padrões de desenvolvimento de APIs, lidar com persistência usando EF Core, aplicar migrations e expor endpoints REST seguindo boas práticas.
+
+---
+
+### 📌 Proposta
+
+Implementar o modelo `Tarefa` com propriedades como `Id`, `Titulo`, `Descricao`, `Data` e `Status`. Expor endpoints para criar, atualizar, remover e consultar tarefas individualmente ou por filtros (titulo, data, status). Integrar com o `OrganizadorContext` do EF Core e disponibilizar documentação automática com Swagger.
+
+---
+
+### 🔎 Métodos esperados / Endpoints
+
+Seguindo o padrão do desafio, implemente os endpoints (exemplos):
+
+* `GET /Tarefa/{id}` — obter por id
+* `PUT /Tarefa/{id}` — atualizar
+* `DELETE /Tarefa/{id}` — deletar
+* `GET /Tarefa/ObterTodos` — listar todas
+* `GET /Tarefa/ObterPorTitulo?titulo=` — buscar por título
+* `GET /Tarefa/ObterPorData?data=` — buscar por data
+* `GET /Tarefa/ObterPorStatus?status=` — buscar por status
+* `POST /Tarefa` — criar nova tarefa
+
+É recomendado expor o Swagger UI para testar os endpoints durante o desenvolvimento.
+
+---
+
+### 🧩 Funcionalidades e validações
+
+* Validação básica de entrada (título não vazio, data válida)
+* Tratamento de erros com respostas HTTP adequadas (404, 400, 500)
+* Uso de migrations para versionamento do esquema do banco
+* Serialização JSON e mapeamento de DTOs quando necessário
+
+---
+
+### 📁 Estrutura do projeto (resumo)
+
+```
+TrilhaApiDesafio
+├── Program.cs
+├── Controllers
+│   └── TarefaController.cs
+├── Context
+│   └── OrganizadorContext.cs
+├── Models
+│   ├── Tarefa.cs
+│   └── EnumStatusTarefa.cs
+└── Migrations
+```
+
+---
+
+### ▶️ Execução
+
+1. Abra a solução em uma IDE compatível (Visual Studio, VS Code).
+2. Ajuste a `connection string` em `appsettings.json` se necessário.
+3. Atualize o banco com as migrations:
+
+```powershell
+dotnet ef database update
+```
+
+4. Execute a aplicação (`dotnet run` ou via IDE) e acesse `/swagger` para testar os endpoints.
+
+---
+
+🔝 [Voltar ao índice](#️-índice-de-projetos)
+
+````
