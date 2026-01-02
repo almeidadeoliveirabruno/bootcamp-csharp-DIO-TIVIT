@@ -1,0 +1,15 @@
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\bin\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.exe
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\bin\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.deps.json
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\bin\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.runtimeconfig.json
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\bin\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.dll
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\bin\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.pdb
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.AssemblyInfoInputs.cache
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.AssemblyInfo.cs
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.csproj.CoreCompileInputs.cache
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.sourcelink.json
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.dll
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\refint\Projeto 6- Validador de Bandeira de Cartão Usando IA.dll
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.pdb
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\Projeto 6- Validador de Bandeira de Cartão Usando IA.genruntimeconfig.cache
+D:\Cursos\bootcampC#\Projetos\Projeto 6- Validador de Bandeira de Cartão Usando IA\obj\Debug\net9.0\ref\Projeto 6- Validador de Bandeira de Cartão Usando IA.dll

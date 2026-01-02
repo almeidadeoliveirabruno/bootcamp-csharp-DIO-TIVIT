@@ -15,6 +15,7 @@ Os projetos são simples, porém intencionais: cada um trabalha conceitos essenc
 * [Projeto 03 — Sistema de Smartphones (POO / Console)](#projeto-03--sistema-de-smartphones-poo--console)
 * [Projeto 04 — Consultas SQL com Banco de Dados de Filmes](#projeto-04--consultas-sql-com-banco-de-dados-de-filmes)
 * [Projeto 05 — API de Tarefas (Web API)](#projeto-05--api-de-tarefas-web-api)
+* [Projeto 06 — Validador de cartões de crédito Console](#projeto-06--validador-de-cartões-de-crédito-console)
 ---
 
 ## Projeto 01 — Sistema de Estacionamento (Console)
@@ -322,4 +323,142 @@ dotnet ef database update
 
 🔝 [Voltar ao índice](#️-índice-de-projetos)
 
-````
+---
+## Projeto 06 — Validador de Cartões de Crédito (Console)
+
+**Tipo:** Aplicação Console
+**Foco:** Regras de negócio, validações, algoritmos e Engenharia de Prompt
+
+### Objetivo
+
+* Desenvolver um programa de validação de cartões de crédito
+* Identificar a bandeira do cartão com base em prefixos e comprimento
+* Validar a numeração do cartão utilizando o algoritmo de Luhn
+* Aplicar técnicas de Engenharia de Prompt durante o desenvolvimento
+* Utilizar IA como apoio para extração de requisitos e geração inicial de lógica
+* Realizar revisão crítica e ajustes manuais em todas as etapas
+
+---
+
+### Conceitos aplicados
+
+* Dicionários (`Dictionary<TKey, TValue>`)
+* Tuplas (`(List<string>, List<int>)`)
+* Regras de negócio baseadas em prefixos
+* Algoritmo de Luhn
+* Validação de entrada
+* Métodos estáticos
+* Organização e manutenção de código
+* Engenharia de Prompt aplicada ao desenvolvimento de software
+
+---
+
+### Processo de desenvolvimento com Engenharia de Prompt
+
+#### 1 - Extração das regras
+
+* As regras de validação das bandeiras foram obtidas a partir de um vídeo do bootcamp
+* Um print das regras foi salvo e armazenado na pasta de imagens do projeto
+
+---
+
+#### 2 - Transcrição e conferência das regras
+
+* A imagem foi enviada para a IA para transcrição das informações
+* Foi gerado um arquivo `regras_bandeiras.txt` para conferência
+* Prompt utilizado:
+
+```
+Estou fazendo um projeto para validar as bandeiras do cartão de acordo com uma imagem.
+A imagem está com o nome regras.png.
+Crie um arquivo txt com as informações referentes a cada bandeira,
+ele será utilizado para conferir se você extraiu as informações corretamente da imagem.
+```
+
+* As regras extraídas foram revisadas manualmente
+* Bandeiras e regras adicionais sugeridas automaticamente foram removidas
+
+---
+
+#### 3 - Geração da lógica de validação
+
+* Foi utilizado um novo prompt para auxiliar na criação da lógica principal:
+
+```
+Faça um método que classifique se a numeração do cartão é válida
+e qual bandeira ela representa.
+Faça de acordo com as regras do regras_bandeiras.txt.
+O algoritmo deve ser feito em C#, podendo ser implementado no Program
+ou em uma classe separada, priorizando manutenção futura.
+```
+
+---
+
+#### 4 - Revisão da lógica gerada
+
+* Conferência manual da lógica gerada pela IA
+* Ajustes em regras de negócio
+* Melhoria da legibilidade do código
+* Adequação para facilitar manutenção futura
+
+---
+
+#### 5 - Expansão do projeto
+
+* Adição de bandeiras extras ao projeto
+* Simulação de cenários reais com regras legadas e múltiplos padrões de cartão
+
+---
+
+### Funcionalidades
+
+* Identificação automática da bandeira do cartão
+* Validação da numeração usando o algoritmo de Luhn
+* Suporte às seguintes bandeiras:
+
+  * Visa
+  * Visa Electron
+  * Mastercard
+  * American Express
+  * Discover
+  * Elo
+  * Hipercard
+  * Diners Club
+  * JCB
+  * Maestro
+  * enRoute
+  * Solo
+  * Switch
+  * Laser
+* Retorno informando se o cartão é válido e sua respectiva bandeira
+
+---
+
+### Estrutura do projeto
+
+```
+CardValidator
+- Program.cs
+- CardValidator.cs
+```
+
+---
+
+### Execução
+
+* Clonar o repositório
+* Abrir o projeto em uma IDE compatível
+* Executar como aplicação console
+* Informar o número do cartão para validação
+
+---
+
+### Observações
+
+* Algumas bandeiras incluídas (enRoute, Solo, Switch e Laser) estão descontinuadas
+* Elas foram mantidas para fins didáticos e de estudo
+* O projeto simula cenários reais de validação legada em sistemas financeiros
+
+---
+
+🔝 [Voltar ao índice](#-índice-de-projetos)

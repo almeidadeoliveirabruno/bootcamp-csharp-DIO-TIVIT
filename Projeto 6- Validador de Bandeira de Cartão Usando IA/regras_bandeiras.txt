@@ -1,0 +1,35 @@
+Visa:
+- Prefixos: 4
+- Comprimentos: 13, 16, 19
+- Algoritmo: Luhn
+- Outros: Cartões Visa são emitidos globalmente e começam com o dígito 4. O algoritmo Luhn é usado para validação.
+
+Mastercard:
+- Prefixos: 51-55, 2221-2720
+- Comprimentos: 16
+- Algoritmo: Luhn
+- Outros: Cartões Mastercard começam com dígitos entre 51-55 ou 2221-2720. Usam o algoritmo Luhn para validação.
+
+American Express:
+- Prefixos: 34, 37
+- Comprimentos: 15
+- Algoritmo: Luhn
+- Outros: Cartões American Express (Amex) começam com 34 ou 37 e têm 15 dígitos. Validação via Luhn.
+
+Discover:
+- Prefixos: 6011, 622126-622925, 644-649, 65
+- Comprimentos: 16
+- Algoritmo: Luhn
+- Outros: Cartões Discover incluem prefixos como 6011, 65, etc. Geralmente 16 dígitos, com validação Luhn.
+
+Elo:
+- Prefixos: 4011, 4312, 4389, 4514, 4576, 5041, 5066, 5067, 5090, 6277, 6362, 6363, 6500, 6504, 6505, 6509, 6516, 6550
+- Comprimentos: 16
+- Algoritmo: Luhn
+- Outros: Bandeira brasileira Elo, com vários prefixos. 16 dígitos, validação Luhn.
+
+Hipercard:
+- Prefixos: Geralmente 6062
+- Comprimentos: 16
+- Algoritmo: Luhn
+- Outros: Bandeira brasileira Hipercard, prefixo 6062, 16 dígitos, algoritmo Luhn.
