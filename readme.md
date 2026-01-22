@@ -4,7 +4,6 @@ Este repositório reúne **projetos desenvolvidos para o bootcamp de C# da DIO**
 
 Os projetos são simples, porém intencionais: cada um trabalha conceitos essenciais que servem de base para aplicações maiores, como APIs, sistemas web e aplicações desktop.
 
-> 🚧 **Observação:** este repositório será atualizado com novos projetos do bootcamp.
 
 ---
 
